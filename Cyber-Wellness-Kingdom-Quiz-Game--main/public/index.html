@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/leaderboard.css" rel="stylesheet"/>
+    <link href="css/guide.css" rel="stylesheet"/>
+
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/knightLogo.png" class="logo img-fluid">
+            </a>
+            <!-- Navbar links -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.html">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters.html">Characters</a>
+                    </li>
+                    <!--For review-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a id="profileButton" href="/profile.html" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="logoutButton" href="#" class="nav-link">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+                    </li>
+                    <li>
+                        <div class="btn-nav">
+                            <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html">Register!</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="py-4">
+    <!--Big Website Title-->
+    <div class="main-container"> <!--In css made mainContainer center-->
+        <h1 class="text-white">Cyber Wellness Kingdom</h1>
+        <p class="text-white">Build your kingdom of cyber resilience!</p>
+    </div>
+
+        <!-- Survey question table -->
+        <div class="container">
+            <div id="surveyList" class="row">
+                <!--  survey question table  here -->
+            </div>
+            <button id="postButton" class="post-btn">Post a question</button>
+        </div>
+
+        <!--Big Title leading to Guide-->
+    <div id ="GuideText" class="main-container">
+        <h1 class="text-white">Guide and Testimonials</h1>
+             </div>
+    <!--Guide for the game mainly for non logged in users, but also viewable by logged in users-->
+    <div class="container">
+    <div id="guideContainer" class = "text-dark text-center row">
+        <!-- Guide content is be populated here -->
+    </div>
+    <div id="reviewContainer">
+        <!-- Review content is populated here -->
+    </div>
+    </div>
+    
+       
+
+    </main>
+
+    <!-- Modals -->
+    <div id="answerModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Answer the Question</h2>
+          <form id="answerForm">
+            <input type="hidden" id="questionId" name="questionId">
+            <div class="form-group">
+              <label>Your Answer:</label>
+              <div>
+                <label>
+                  <input type="radio" id="trueAnswer" name="answer" value="true" required> True
+                </label>
+                <label>
+                  <input type="radio" id="falseAnswer" name="answer" value="false" required> False
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="additionalNotes">Additional Notes:</label>
+              <textarea id="additionalNotes" name="additionalNotes" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      
+    
+    <!-- Modal Structure for update -->
+    
+    <!-- Modal Structure for update -->
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Update Question</h2>
+            <form id="updateForm">
+                <input type="hidden" id="updateQuestionId" name="updateQuestionId">
+                <div class="form-group">
+                    <label for="updateQuestionInput">Updated Question:</label>
+                    <textarea id="updateQuestionInput" name="updateQuestionInput" class="form-control" required></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Post Modal -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Post a New Question</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="postQuestion">Question:</label>
+                    <textarea id="postQuestion" name="question" class="form-control" required></textarea>
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Post Question</button>
+            </form>
+        </div>
+    </div>
+
+
+ 
+<!-- View Answers Modal -->
+<div id="viewAnswersModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Answers</h2>
+      <div id="answersList">
+        <!-- Answers will be populated here -->
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 text-center">
+        <p class="m-0 py-0 px-4 text-white">
+            Created by Kosen Goh 
+        </p>
+    </footer>
+
+    <!-- Bootstrap and custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="js/queryCmds.js" type="text/javascript"></script>
+    <script src="js/getCurrentURL.js" type="text/javascript"></script>
+    <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+    <script src="js/showAllSurvey.js" type="text/javascript"></script> <!--For Survey Table-->
+    <script src="js/submitAnswer.js" type="text/javascript"></script> <!--For submitting and Anser-->
+    <script src="js/postQuestion.js" type="text/javascript"></script>  <!--For Posting a Question-->
+    <script src="js/hideNavbarForUnauth.js" type="text/javascript"></script><!--Used to hide navbar for normal users not logged in-->
+    <script src="js/guide.js" type="text/javascript"></script><!--Used to get the guide in the index.html-->
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Apply styles only to the leaderboard section */
+#leaderboardContainer {
+    width: 100%; /* Set a maximum width for the leaderboard */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.65); /* Lighter background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#leaderboardContainer .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc; /* Lighter border */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+#leaderboardContainer .leaderboard-item:hover {
+    background-color: #e0e0e0; /* Slightly darker light background on hover */
+    transform: scale(1.02); /* Slightly zoom in on hover */
+}
+
+#leaderboardContainer .leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+#leaderboardContainer .leaderboard-rank {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black; /* Darker gold color for ranks */
+}
+
+#leaderboardContainer .leaderboard-username {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for username */
+    text-align: center;
+    flex-grow: 1; /* Stretch to fill available space */
+}
+
+#leaderboardContainer .leaderboard-points {
+    font-size: 1.2em;
+    color: black; /* Darker green color for points */
+}
+
+#leaderboardContainer .container {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+}

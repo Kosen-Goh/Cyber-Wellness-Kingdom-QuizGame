@@ -1,0 +1,26 @@
+#characterList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Add some spacing between the cards */
+    justify-content: center; /* Distribute space evenly */
+}
+
+.character-card {
+    flex: 1 1 calc(33.333% - 1rem); /* Adjust the width of the cards */
+    max-width: calc(33.333% - 1rem); /* Prevent cards from becoming too large */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .character-card {
+        flex: 1 1 calc(50% - 1rem); /* Adjust width for smaller screens */
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .character-card {
+        flex: 1 1 100%; /* Full width for very small screens */
+        max-width: 100%;
+    }
+}

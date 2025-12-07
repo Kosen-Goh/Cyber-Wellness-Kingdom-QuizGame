@@ -1,0 +1,70 @@
+/* Container for weapon cards */
+#inventoryItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Padding around the container */
+    justify-content: center; /* Center the cards */
+}
+
+/* Style for each card */
+.card {
+    width: 200px; /* Adjust the width of the card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure contents don't overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    background-color: #fff; /* White background */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Style for the card body */
+.card-body {
+    padding: 16px; /* Padding inside the card */
+}
+
+/* Style for the card image */
+.card-img-top {
+    width: 100%; /* Make image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the image area */
+}
+
+/* Style for the card title */
+.card-title {
+    font-size: 1.25rem; /* Slightly larger text */
+    margin-bottom: 8px; /* Space below the title */
+}
+
+/* Style for the card text */
+.card-text {
+    font-size: 0.875rem; /* Smaller text */
+    color: #555; /* Darker text color */
+    margin-bottom: 8px; /* Space below the text */
+}
+
+/* Style for the select button */
+.btn {
+    display: block; /* Block-level button */
+    width: 100%; /* Make button fill the card width */
+    margin-top: 12px; /* Space above the button */
+    text-align: center; /* Center text inside the button */
+    font-size: 0.875rem; /* Smaller font size */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+    color: #fff; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+

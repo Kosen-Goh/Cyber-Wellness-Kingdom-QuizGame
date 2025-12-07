@@ -1,0 +1,151 @@
+/* for character cards */
+
+
+/* Character Card Styles */
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.select-character-btn {
+    background-color: #8B4513;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.select-character-btn:hover {
+    background-color: #8B4513;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-2 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* for create character button */
+.create-character-button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-character-button:hover {
+    background-color: #A0522D;
+}
+
+/* Ensure modal backdrop is visible */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Dark enough to cover content */
+}
+
+/* Ensure modal content is visible */
+.modal-content {
+    background-color: #fff; /* White background for modal content */
+}
+
+
+/*For Delete and Update button */
+/* Style for Update Button */
+.update-btn {
+    background-color: #007bff; /* Blue background */
+    color: white;              /* White text */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Add some padding */
+    font-size: 16px;           /* Increase font size */
+    border-radius: 5px;        /* Round the corners */
+    cursor: pointer;           /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.update-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for Delete Button */
+.delete-btn {
+    background-color: #dc3545; /* Red background */
+    color: white;              /* White text */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Add some padding */
+    font-size: 16px;           /* Increase font size */
+    border-radius: 5px;        /* Round the corners */
+    cursor: pointer;           /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

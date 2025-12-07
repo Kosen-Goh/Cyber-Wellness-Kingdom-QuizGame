@@ -1,0 +1,108 @@
+/* Existing styles for the page */
+.navbar {
+    /* make navbar transparent */
+    background-color: rgba(0, 0, 0, 0); /* Transparent */
+    border: none; 
+}
+
+.navbar a {
+    color: white; /* Set text color to white for visibility */
+}
+
+
+/* Apply white text color to the entire page */
+body { 
+    font-family: sans-serif;
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.70),
+        rgba(0, 0, 0, 0.70)
+    ),
+    url('../images/Medievel-background5.jpg');
+    background-position: center; /* Center the background image */
+    background-size: cover; 
+    color: white;
+    background-color: #333; /* Dark background to contrast with white text */
+}
+.footer {
+    background: none; /* Remove background */
+     border: none; 
+  }
+  
+
+/* Styling for the star rating */
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Add margin below the star rating */
+}
+
+.star-rating input[type=radio] {
+    display: none;
+}
+
+.star-rating label {
+    color: #bbb; /* Gray color for unselected stars */
+    cursor: pointer;
+    padding: 0 0.1rem;
+}
+
+.star-rating input[type=radio]:checked ~ label {
+    color: #f0c420; /* Yellow color for selected stars */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f0c420; /* Yellow color for hover effect */
+}
+
+/* Ensure form controls and text are white */
+.form-control, .list-group-item, .btn {
+    background-color: white; /* Darker background for inputs and buttons */
+    color: white;
+    border: 1px solid #9c0000; /* Optional: Add border color to inputs */
+    margin-bottom: 1rem; /* Add margin below inputs and buttons */
+    padding: 0.5rem; /* Add padding inside inputs and buttons */
+}
+
+.form-control:focus {
+    background-color: white;
+    color: black;
+    border-color: #666; /* Optional: Change border color on focus */
+}
+
+/* Ensure that button text is white */
+.btn-primary {
+    color: white;
+}
+
+/* Ensure header text is white */
+h1, h2, label {
+    color: white;
+    margin-bottom: 1rem; /* Add margin below headers and labels */
+}
+
+/* Style the actual review table */
+.table {
+    background-color:  rgba(211, 211, 211, 0.65);; /* Set your desired background color */
+    color: #333; /* Set text color to ensure readability */
+    border-radius: 5px; 
+    overflow: hidden; /* Ensure rounded corners are applied */
+    
+}
+
+/* Style table headers */
+.table thead th {
+    background-color:  rgba(211, 211, 211, 0.65);
+    color: #333; /* Text color for headers */
+
+}
+
+/* Style table cells */
+.table tbody td {
+    background-color: rgba(211, 211, 211, 0.65);; /* White background for table cells */
+    color: black; /* Text color for cells */
+    border: 1px solid #ccc; /* Light border for cells */
+    
+}

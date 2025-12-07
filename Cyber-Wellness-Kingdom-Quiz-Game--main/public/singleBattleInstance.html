@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Battle Instance</title>
+    <!-- Bootstrap CSS and your custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/singleBattleInstance.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/knightLogo.png" class="logo img-fluid">
+    </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- me-auto: margin-right: auto -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html">Characters</a>
+          </li>
+           <!--For review-->
+           <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+        </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ms-auto: margin-left: auto -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a id="profileButton" href="/profile.html" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a id="logoutButton" href="#" class="nav-link">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+          </li>
+          <li>
+            <div class="btn-nav">
+              <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html"
+                >Register!</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-4">
+    <div class="container pb-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="card-title"></h1>
+            </div>
+            <div id="monsterInfo" class="col-12 text-center" style="margin-top: 20px;">
+                <!-- Monster name will be displayed here -->
+                <h5 id="monsterName" class="card-title text-white mb-3"></h5>
+                <!-- Big rectangle for monster pic and health bar -->
+                <div class="MonsterImage" style="width: 300px; height: 300px; background-color: #ccc; background-size: cover; background-position: center; border-radius: 10px; margin: 0 auto;"></div>
+                <div style="width: 100%; height: 20px; background-color: #ddd; border-radius: 10px; margin-top: 20px;">
+                    <!-- Health Bar -->
+                    <div id="healthBar" style="height: 100%; border-radius: 10px; background-color: #4caf50; width: 70%;"></div>
+                </div>
+                <!-- Monster HP will be displayed here -->
+                <p id="hpValue" class="card-text text-white"></p>
+      
+              <div>
+                <!--The Viewinventory dropdown-->
+             <button id="viewInventoryButton" class="btn btn-primary">View Inventory</button>
+
+              </div>
+              <!--ONCE THE CHARACTER GOES TO INVENTORYBATTLE AND SELECT HIS WEAPON WILL APPEAR HERE-->
+              <div id="CharacterSelectedWeapon" class="col-12 text-white">
+                <!-- Selected weapon details will appear here -->
+                <h3>Character's Selected Weapon</h3>
+                <div id="weaponDetails">
+                    <p id="weaponName"></p>
+                    <p id="weaponDamage"></p>
+                    <img id="weaponImage" src="">
+                </div>
+            </div>
+            <!--ONCE THE CHARACTER GOES TO INVENTORYBATTLE AND SELECT HIS WEAPON WILL APPEAR HERE (END)-->
+        </div>
+    </div>
+    
+</main>
+
+
+    <footer class="mt-auto py-3 text-center">
+        <p class="m-0 py-0 px-4 text-white">
+          Created by Kosen Goh 
+         
+        </p>
+    </footer>
+
+    <!-- Bootstrap and custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/queryCmds.js"></script>
+    <script src="js/getCurrentURL.js"></script>
+    <script src="js/userNavbarToggle.js"></script> 
+    <script src="js/singleBattleInstance.js"></script> <!--singleBattleInstance.js file for battle logic -->
+    <script src="js/inventoryBattle.js"></script>  <!--inventoryBattle.js for battle inventory logic-->
+   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--This file is for Practical 7 basic exercise-->

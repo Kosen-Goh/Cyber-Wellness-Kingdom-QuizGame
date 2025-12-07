@@ -1,0 +1,17 @@
+/*For Different Color shop card based on rarity grade */
+
+.rarity-common {
+    background-color: white;
+}
+.rarity-uncommon {
+    background-color: grey;
+}
+.rarity-rare {
+    background-color: red;
+}
+.rarity-epic {
+    background-color: purple;
+}
+.rarity-legendary {
+    background-color: gold;
+}

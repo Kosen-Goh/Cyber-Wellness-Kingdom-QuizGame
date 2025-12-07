@@ -1,0 +1,203 @@
+body
+{
+    font-family: sans-serif;
+    background-image:
+    linear-gradient(
+  rgba(0, 0, 0, 0.70),
+  rgba(0, 0, 0, 0.70)
+    ),
+     url('../images/cyberkingdom2wallpaper.jpg');
+    background-position: center; /* Center the background image */
+    background-size: cover; 
+
+}
+
+main
+{
+    min-height: calc(100vh - 56px - 56px);
+
+
+}
+
+.navbar {
+    /* make navbar transparent*/
+    background-color: rgba(0, 0, 0, 0); /* Black color with 80% opacity */
+    border: none; 
+}
+
+.navbar a {
+    color: white; /* Set text color to white for visibility */
+}
+
+.footer {
+  background: none; /* Remove background */
+   border: none; 
+}
+
+/* Additional styles to make the table content look nice */
+#surveyList table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #000; /* Ensure table text is visible */
+    border-radius: 10px; /* Add rounded corners to table */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    margin-bottom: 90px; /*For space between surveyTable and Guide */
+}
+
+#surveyList th, #surveyList td {
+    padding: 12px 15px;
+    background-color: rgba(211, 211, 211, 0.65); /* Light gray text color */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for better separation */
+}
+
+#surveyList th {
+    background-color: rgba(211, 211, 211, 0.65); /* Light gray text color */
+
+
+}
+
+
+/*For the model in index.html*/
+
+/* Modal Container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #f4e8c1;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    width: 40%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    font-family: 'Garamond', serif;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #8b4513;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal Heading */
+  .modal-content h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 24px;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b2e15;
+    font-size: 18px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Garamond', serif;
+    font-size: 16px;
+  }
+  
+  /* Submit Button */
+/* general button style*/
+  .btn {
+    background-color: #8b4513;
+    color: #f4e8c1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #4b2e15;
+    color: #fff;
+  }
+  
+/* For post button*/
+.post-btn {
+  background-color: #8b4513;
+  color: #f4e8c1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Center horizontally */
+  margin: 10px auto; /* Space above and below */
+  margin-bottom: 60px; /* Additional space below the button */
+}
+
+.post-btn:hover {
+  background-color: #4b2e15;
+  color: #fff;
+}
+
+/*For battles*/
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+
+.center
+{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* End Non-Essential  */
+
+
+/*Big Website Title */
+/* for the titles in index.html */
+.main-container {
+  text-align: center;
+}
