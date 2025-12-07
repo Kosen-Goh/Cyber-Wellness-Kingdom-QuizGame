@@ -1136,7 +1136,7 @@ module.exports.guide = (req, res, next) => {
     const callback = (error, results, fields) => {
         // Making the steps constant to be nicely aligned so the front end will be nice
         const steps = "1. Register a User Account.\n\n" +
-                      "2. Answer the Survey Questions to earn points.\n\n" +
+                      "2. Answer the Cyber Wellness Survey Questions to earn points Research is key!.\n\n" +
                       "3. Create a Character once you have a decent amount of points. Your points will be converted into silver.\n\n" +
                       "4. Battle Monsters using silver and earn gold and xp.\n\n" +
                       "5. Spend Gold to buy weapons in the shop and spin for items of varying rarity.\n\n" +
@@ -1149,9 +1149,9 @@ module.exports.guide = (req, res, next) => {
         
     
         res.status(200).json({
-            title: "How to Play Survey Kingdom - Battle Berzerk",
+            title: "How to Play Cyber Wellness Kingdom - Quiz Game",
             steps: formattedSteps,
-            review: "Do leave a review of your experience playing Survey Kingdom - Battle Berzerk!",
+            review: "Do leave a review of your experience playing Cyber Wellness Kingdom!",
             testimonial: results
         });
     };
