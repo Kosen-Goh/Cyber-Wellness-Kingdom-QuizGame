@@ -27,7 +27,7 @@ app.use("/", express.static('public'));
 // SETUP ROUTES
 //////////////////////////////////////////////////////
 const mainRoutes = require('./routes/mainRoutes'); // define main routes to use it
-app.use("/", mainRoutes);
+app.use("/api", mainRoutes);
 // need api to prevent conflicts with other routes
 
 
